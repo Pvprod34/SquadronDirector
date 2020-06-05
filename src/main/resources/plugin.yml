@@ -1,18 +1,12 @@
-name: Cargo
-main: io.github.cccm5.CargoMain
+name: SquadronDirector
+main: io.github.cccm5.SquadronDirectorMain
 version: ${project.version}
 api-version: 1.14
-depend: [Movecraft, Vault, Citizens, dtlTraders]
+depend: [Movecraft]
 commands:
-    load:
-        description: loads cargo
-        permission: Cargo.load
-    unload:
-        description: unloads cargo
-        permission: Cargo.unload
-    cargo:
-        description: get information about the plugin
-        permission: Cargo.cargo
+    squadronrelease:
+        description: Release the squadron being commanded
+        permission: SquadronDirector.release
 permissions:
     Cargo.load:
         description: Allows users to load cargo
