@@ -8,9 +8,6 @@ commands:
         description: Release the squadron being commanded
         permission: SquadronDirector.release
 permissions:
-    Cargo.load:
-        description: Allows users to load cargo
-    Cargo.unload:
-        description: Allows users unload cargo
-    Cargo.cargo:
-        description: Allows users to use /cargo
+    Squadron.release:
+        description: Allows users to release their squadron
+
