@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cccm5.github.io</groupId>
-	<artifactId>Cargo</artifactId>
+	<artifactId>FighterDirector</artifactId>
 	<version>1.1.0</version>
 	<build>
 		<sourceDirectory>src/main</sourceDirectory>
@@ -28,14 +28,6 @@
 			<id>spigot-repo</id>
 			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
 		</repository>
-         <repository>
-			<id>citizens-repo</id>
-			<url>http://repo.citizensnpcs.co/</url>
-		</repository>
-        <repository>
-            <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>
 	</repositories>
 	<dependencies>
 		<!--Spigot API -->
@@ -60,27 +52,6 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/Movecraft.jar</systemPath>
 		</dependency>
-        <!--DTL Traders-->
-        <dependency>
-			<groupId>com.degitise.minevid</groupId>
-			<artifactId>dtlTraders</artifactId>
-			<version>LATEST</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/dtlTraders.jar</systemPath>
-		</dependency>
-        <!--Citizens-->
-        <dependency>
-            <groupId>net.citizensnpcs</groupId>
-			<artifactId>citizensapi</artifactId>
-			<version>2.0.24-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
-        <!--Vault-->
-        <dependency>
-            <groupId>net.milkbowl.vault</groupId>
-            <artifactId>VaultAPI</artifactId>
-            <version>1.6</version>
-            <scope>provided</scope>
-        </dependency>
+        
 	</dependencies>
 </project>
