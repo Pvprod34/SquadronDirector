@@ -4,10 +4,22 @@ version: ${project.version}
 api-version: 1.14
 depend: [Movecraft]
 commands:
-    squadronrelease:
+    sdrelease:
         description: Release the squadron being commanded
         permission: SquadronDirector.release
+    sdlaunch:
+        description: Enter Squadron Director launching mode
+        permission: SquadronDirector.launch
 permissions:
-    Squadron.release:
-        description: Allows users to release their squadron
+    Squadron.sign.release:
+        description: Allows users to release their squadron with a sign
+    Squadron.sign.launch:
+        description: Allows users to enter launching mode with a sign
 
+    Squadron.command.release:
+        description: Allows users to release their squadron with a command
+    Squadron.command.launch:
+        description: Allows users to enter launching mode with a command
+
+    Squadron.craftname:
+        description: Allows users to direct a craft named craftnamed
