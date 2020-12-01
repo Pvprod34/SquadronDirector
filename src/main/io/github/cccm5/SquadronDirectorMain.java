@@ -695,7 +695,7 @@ private static boolean debug;
             }
         }
 
-        if (sign.getLine(0).equals(ChatColor.DARK_AQUA + "SquadronDirector")) {
+        if (sign.getLine(0).equals(ChatColor.DARK_AQUA + "DrillDirector")) {
             if(!signIsOnCraft) {
                 player.sendMessage(ERROR_TAG + "The command sign is not on a piloted craft!");
                 return;
@@ -946,8 +946,8 @@ private static boolean debug;
         if(!e.getBlock().getType().name().equals("SIGN_POST") && !e.getBlock().getType().name().endsWith("SIGN") && !e.getBlock().getType().name().endsWith("WALL_SIGN")){
             return;
         }
-        if(ChatColor.stripColor(e.getLine(0)).equalsIgnoreCase("SquadronDirector") ){
-            e.setLine(0,ChatColor.DARK_AQUA + "SquadronDirector");
+        if(ChatColor.stripColor(e.getLine(0)).equalsIgnoreCase("DrillDirector") ){
+            e.setLine(0,ChatColor.DARK_AQUA + "DrillDirector");
             if(ChatColor.stripColor(e.getLine(1)).equalsIgnoreCase("[release]") ){
                 e.setLine(1,ChatColor.DARK_BLUE + "[Release]");
             } else if (ChatColor.stripColor(e.getLine(1)).equalsIgnoreCase("[launch]") ){
