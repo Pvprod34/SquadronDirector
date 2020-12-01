@@ -1445,13 +1445,5 @@ private static boolean debug;
                 }
             }
         }
-        if(!foundCruise) {
-            craft.getNotificationPlayer().sendMessage(ERROR_TAG+"This craft has no Cruise sign and can not be directed");
-            CraftManager.getInstance().removeCraft(craft);
-        }
-        if(!foundHelm) {
-            craft.getNotificationPlayer().sendMessage(ERROR_TAG+"This craft has no Helm sign and can not be directed");
-            CraftManager.getInstance().removeCraft(craft);
-        }
     }
 }
