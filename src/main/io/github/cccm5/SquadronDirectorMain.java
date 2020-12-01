@@ -851,7 +851,7 @@ private static boolean debug;
                 return;
             }
 
-            player.sendMessage(ERROR_TAG + "Squadron Director sign not recognized!");
+            player.sendMessage(ERROR_TAG + "Drill Director sign not recognized!");
             return;
         }
 
@@ -975,7 +975,7 @@ private static boolean debug;
                     e.setLine(3,"10");
                 }
             } else {
-                e.getPlayer().sendMessage(ERROR_TAG + "Squadron Director sign not recognized!");
+                e.getPlayer().sendMessage(ERROR_TAG + "Drill Director sign not recognized!");
             }
 
         }
