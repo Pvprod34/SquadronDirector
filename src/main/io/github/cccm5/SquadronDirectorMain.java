@@ -54,7 +54,7 @@ import java.util.logging.Logger;
 public class SquadronDirectorMain extends JavaPlugin implements Listener {
 public static Logger logger;
 public static final String ERROR_TAG = ChatColor.RED + "Error: " + ChatColor.DARK_RED;
-public static final String SUCCESS_TAG = ChatColor.DARK_AQUA + "Squadron Director: " + ChatColor.WHITE;
+public static final String SUCCESS_TAG = ChatColor.DARK_AQUA + "Drill Director: " + ChatColor.WHITE;
 private ConcurrentHashMap<Player, Integer> playersStrafingUpDown;
 private ConcurrentHashMap<Player, Integer> playersStrafingLeftRight;
 private ConcurrentHashMap<Player, String> playersWeaponControl;
